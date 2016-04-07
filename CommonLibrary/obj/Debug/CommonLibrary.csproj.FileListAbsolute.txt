@@ -1,0 +1,5 @@
+C:\Users\linjianwei\Documents\visual studio 2013\Projects\Test\CommonLibrary\CommonLibrary\bin\Debug\CommonLibrary.dll
+C:\Users\linjianwei\Documents\visual studio 2013\Projects\Test\CommonLibrary\CommonLibrary\bin\Debug\CommonLibrary.pdb
+C:\Users\linjianwei\Documents\visual studio 2013\Projects\Test\CommonLibrary\CommonLibrary\obj\Debug\CommonLibrary.csprojResolveAssemblyReference.cache
+C:\Users\linjianwei\Documents\visual studio 2013\Projects\Test\CommonLibrary\CommonLibrary\obj\Debug\CommonLibrary.dll
+C:\Users\linjianwei\Documents\visual studio 2013\Projects\Test\CommonLibrary\CommonLibrary\obj\Debug\CommonLibrary.pdb

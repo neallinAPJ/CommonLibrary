@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,7 +33,18 @@ namespace CommonLibrary
         {
             Stream stream = new MemoryStream(bytes);
             return stream;
-
+        }
+        /// <summary>
+        /// 通过MD5加密把文件转换成Hashkey字符窜
+        /// </summary>
+        /// <param name="fileContent">文件内容</param>
+        /// <returns>输出Hash值</returns>
+        public static string ConvertFileToHashKey(byte[] fileContent)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                return BitConverter.ToString(md5.ComputeHash(fileContent)).Replace("-", "");
+            }
         }
     }
 }
