@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CommonLibrary
 {
-    public class ImageHelper
+    public static class ImageHelper
     {
         /// <summary>
         /// 横向合并图片
@@ -63,7 +63,7 @@ namespace CommonLibrary
         /// </summary> 
         /// <param name="byt">要转换的字节流</param> 
         /// <returns>转换得到的Image对象</returns> 
-        public static Image ByteToImg(byte[] byt)
+        public static Image ByteToImg(this byte[] byt)
         {
             MemoryStream ms = new MemoryStream(byt);
             Image img = Image.FromStream(ms);
@@ -74,7 +74,7 @@ namespace CommonLibrary
         /// </summary>
         /// <param name="img"></param>
         /// <returns></returns>
-        public static byte[] ImageToByteArray(Image img)
+        public static byte[] ImageToByteArray(this Image img)
         {
             using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
             {
